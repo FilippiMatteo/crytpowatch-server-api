@@ -1,17 +1,19 @@
 {
-  "name": "tradingview-api",
-  "version": "0.0.0",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "private": true,
+  "name": "crytpowatch-server-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.8.9",
-    "node": "^13.6.0"
+    "path": "^0.12.7"
   },
-  "devDependencies": {
-    "cors": "^2.8.5"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
