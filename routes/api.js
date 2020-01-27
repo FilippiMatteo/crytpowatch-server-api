@@ -1,7 +1,7 @@
 var express      = require('express');
 var router       = express.Router();
-const ChartModel = require("../models/chart.model");
-const mongoose   = require("mongoose");
+//const ChartModel = require("../models/chart.model");
+//const mongoose   = require("mongoose");
 const axios      = require('axios');
 
 
@@ -22,7 +22,7 @@ router.get('/', function (req, res, next) {
     axios.get(url),
   ]).then(axios.spread((response) => {
 
-    saveChart(response.data, req.query);
+  //  saveChart(response.data, req.query);
 
     res.json({
 
@@ -39,7 +39,7 @@ router.get('/', function (req, res, next) {
   // res.json({api: "api"});
 });
 
-
+/*
 function saveChart(obj, parameters) {
   let hours = parameters.timeFrame / 60;
 
@@ -84,5 +84,5 @@ function findChart(market, periods,) {
     }
   });
 }
-
+*/
 module.exports = router;
