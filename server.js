@@ -2,7 +2,7 @@ var express = require('express');
 var path    = require('path');
 
 // var cors = require('cors');
-var PORT =  "8888";
+var PORT =  "5000";
 var HOST = '0.0.0.0';
 
 // use it before all route definitions
