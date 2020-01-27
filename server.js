@@ -1,21 +1,21 @@
 var express = require('express');
 var path    = require('path');
 
-// var cors = require('cors');
+ var cors = require('cors');
 var PORT =  "5000";
 var HOST = '0.0.0.0';
 
 // use it before all route definitions
-var api = require('./routes/api');
+ var api = require('./routes/api');
 
-var app = express();
+ var app = express();
 
-//app.use(cors({origin: '*'}));
+app.use(cors({origin: '*'}));
 
 
-//app.use(express.json());
-//app.use(express.urlencoded({extended: false}));
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', (req, res, next) => {
     console.log("test");
@@ -23,7 +23,7 @@ app.use('/', (req, res, next) => {
     next();
 });
 
-app.use('/api', api);
+ app.use('/api', api);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

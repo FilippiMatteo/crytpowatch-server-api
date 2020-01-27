@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./server.js"
   },
   "author": "",
   "license": "ISC"
