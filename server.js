@@ -1,7 +1,7 @@
 var express = require('express');
 var path    = require('path');
 
-var cors = require('cors');
+// var cors = require('cors');
 var PORT = process.env.Port || "8888";
 var HOST = '0.0.0.0';
 
@@ -10,7 +10,7 @@ var api = require('./routes/api');
 
 var app = express();
 
-app.use(cors({origin: '*'}));
+//app.use(cors({origin: '*'}));
 
 
 app.use(express.json());
