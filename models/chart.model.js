@@ -11,9 +11,9 @@ let mongoose = require('mongoose');
        QuoteVolume
      ] */
 
-mongoose.connect("mongodb://localhost:27017/charts");
+//mongoose.connect("mongodb://localhost:27017/charts");
 
-let chartSchema = new mongoose.Schema({
+ let chartSchema = new mongoose.Schema({
   timecandles: String,
   bars       : [[Number]],
   timeStart  : String,
