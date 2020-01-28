@@ -2,8 +2,7 @@ var express = require('express');
 var path    = require('path');
 
  var cors = require('cors');
-var PORT =  "5000";
-var HOST = '0.0.0.0';
+
 
 // use it before all route definitions
  var api = require('./routes/api');
@@ -32,8 +31,5 @@ app.use(function (req, res, next) {
 });
 
 
-app.listen(PORT, HOST, function () {
-    console.log("server listener on " + PORT)
-});
 
 module.exports = app;
